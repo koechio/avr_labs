@@ -10,3 +10,8 @@
 *.swp
 .DS_Store
 Thumbs.db
+AVR-Programming-Library
+02_serial_io/pinDefines.h
+02_serial_io/serialLoopback.c
+02_serial_io/USART.c
+02_serial_io/USART.h
