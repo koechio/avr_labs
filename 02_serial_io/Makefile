@@ -1,7 +1,7 @@
 
 # Project Settings
 MCU = atmega168
-F_CPU = 5333333
+F_CPU = 8000000UL
 BAUD = 9600
 PROGRAMMER = usbtiny
 TARGET = main

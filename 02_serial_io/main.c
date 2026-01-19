@@ -5,11 +5,13 @@
 int main(void) {
     initUSART(); // Initialize USART communication
     DDRB = 0xff; // Set PORTB as output
+while(1){
 for (uint8_t i = 0; i < 8; i++) {
-  _delay_ms(2000); // Wait for 2 seconds
     transmitByte('U'); // Sends 8 numbers in a row
-    PORTB = (1 << i); // Light up one LED at a time`
-    _delay_ms(4000); // Wait for 2 seconds
-};
+    _delay_ms(500);
+    transmitByte(i + '0'); // Sends 8 numbers in a row
+    transmitByte(i);
+    _delay_ms(500);
+};};
 return 0;
 }
