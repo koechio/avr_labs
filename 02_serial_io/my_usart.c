@@ -21,3 +21,11 @@ void transmitByte(uint8_t data){
     }
     UDR0 = data; // send data
 };
+uint8_t receiveByte(){
+  while (!(UCSR0A & (1 << RXC0))) {
+  }
+  transmitByte('R');
+  uint8_t data = UDR0;
+  transmitByte(data);
+  return data;
+}

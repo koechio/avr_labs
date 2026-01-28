@@ -12,4 +12,5 @@
 
 void initUSART(void);//initializes usart by writing to UBRR0H and UBRR0L
 void transmitByte(uint8_t data);
+uint8_t receiveByte();
 #endif
